@@ -60,8 +60,6 @@ services:
       - INFLUXDB_ADMIN_PASSWORD=adminadmin
       - INFLUXDB_HTTP_FLUX_ENABLED=true
       - INFLUXDB_ADMIN_ENABLED=true
-    ports:
-      - 8086:8086
     volumes:
       - ./:/imports
       - influxdb_data:/var/lib/influxdb    
@@ -97,7 +95,6 @@ services:
       - INFLUXDB_HOST=influxdb
       - INFLUXDB_PORT=8086
       - DATABASE=influx
-
     volumes:
       - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
       - /var/run/docker.sock:/var/run/docker.sock
@@ -110,8 +107,6 @@ services:
       - mongo
     links:
       - influxdb
-    ports:
-      - 8125:8125
     networks:
       - gateway
 
