@@ -16,7 +16,7 @@ You can change the settings in file called `ab/ab.sh`.
 
 ## Demo
 
-Wisit [http:://localhost:3000](http:://localhost:3000) to see all of the graphs.
+Wisit [http://localhost:3000](http://localhost:3000) to see all of the graphs.
 
 ## Examples
 
