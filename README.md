@@ -12,11 +12,14 @@ Load generation script is already a part of docker-compose.
 
 It will make from 1000 to 10000 requests concurrently after 15 seconds on startup.
 
-You can change the settings in file called `ab/ab.sh`.
+You can change the settings in file called `./ab/ab.sh`.
 
 ## Demo
 
 Wisit [http://localhost:3000](http://localhost:3000) to see all of the graphs.
+
+Login: `admin`
+Password: `admin`
 
 ## Examples
 
